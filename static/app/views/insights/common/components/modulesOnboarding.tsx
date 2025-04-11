@@ -179,6 +179,9 @@ const SplitContainer = styled(Panel)`
   display: flex;
   justify-content: center;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
 `;
 
 const ModuleInfo = styled('div')`
@@ -199,6 +202,7 @@ const ModulePreviewContainer = styled('div')`
   width: 100%;
   padding: ${space(3)};
   background-color: ${p => p.theme.backgroundSecondary};
+  overflow: hidden;
 `;
 
 const SupportedSdkContainer = styled('div')`
@@ -232,6 +236,7 @@ const SupportedSdkIconContainer = styled('div')`
 const ValueProp = styled('div')`
   flex: 1;
   padding: ${space(3)};
+  overflow: hidden;
   ul {
     margin-top: ${space(1)};
   }
